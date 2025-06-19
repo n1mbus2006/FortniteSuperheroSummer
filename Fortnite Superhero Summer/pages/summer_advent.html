@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite: Календарь летних подарков</title>
+    <link rel="icon" type="favicon" href="../assets/images/logomini.png">
+    <link rel="stylesheet" href="../styles/header&main&footer.css">
+    <link rel="stylesheet" href="../styles/summer_advent.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <section class="logos">
+                <a href="../index.html"><img src="../assets/images/logolarge.png" width="100" alt="Логотип Фортнайт"></a>
+            </section>
+            <section class="nav-first">
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </section>
+            <section class="nav-second">
+                <button data-auth-state="unauthenticated" class="authorize"><a href="signin.html">Вход</a></button>
+                <button data-auth-state="authenticated" class="authorize"><a href="signin.html">Выйти</a></button>
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </section>
+            <section class="mobile-buttons">
+            <div class="nav-second-for-mobile">
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </section>
+            <div class="mobile-menu" id="mobileMenu">
+                <button data-auth-state="unauthenticated" class="authorize"><a href="signin.html">Вход</a></button>
+                <button data-auth-state="authenticated" class="authorize"><a href="signin.html">Выйти</a></button>
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="event">
+                <img src="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fgifting-coming-to-battle-royale%2FBR06_News_Featured_Gifting-1920x1080-57a0e0e15467c65cac208679c6b5b558a8e6b626.jpg" alt="Летние подарки Fortnite" class="content-image">
+            <div class="event-header" data-text="FORTNITE ПРЕДСТАВЛЯЕТ: КАЛЕНДАРЬ ЛЕТНИХ ПОДАРКОВ"> 
+                <h1 class="event-title">FORTNITE ПРЕДСТАВЛЯЕТ: КАЛЕНДАРЬ ЛЕТНИХ ПОДАРКОВ</h1>
+            </div>
+            <div class="event-description">
+            <p>Каждый день открывай новый подарок в игре и получай эксклюзивные косметические предметы для своего персонажа! Просто наведи курсор на день, чтобы увидеть, что будет тебя ждать внутри! А также выполняй ежедневные и еженедельные задания чтоб получать игровой опыт и СЕКРЕТНЫЕ ПРЕДМЕТЫ!</p>
+            </div>
+        </section>
+        <section class="calendar-container">
+            <div class="calendar-grid" id="calendar"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-sections">
+            <div>
+                <img src="../assets/images/logolarge.png" width="100" alt="Логотип Фортнайт"></a>
+            </div>
+            <div>
+                <a class="tg" href="#">Telegram</a>
+                <a class="vk" href="#">VK</a>
+                <a class="yt" href="#">YouTube</a>
+                <a class="twitch" href="#">Twitch</a>
+            </div>
+        </div>
+        <div class="legal">
+            <div class="copyright">
+            <p style="margin-bottom: 15px;">© Epic Games, Inc., 2025. Epic, Epic Games, логотип Epic Games, Fortnite, логотип Fortnite, Unreal, Unreal Engine 4 и UE4 являются товарными знаками или зарегистрированными товарными знаками Epic Games, Inc. в США и всём остальном мире. Все права сохранены.</p>
+            <p>
+                <a href="#">Условия обслуживания</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Безопасность</a>
+            </p>
+            </div>
+            <img src="../assets/images/logolarge2.png" width="50" alt="Логотип Epic Games"></a>
+        </div>
+    </footer>
+    <script src="../scripts/header&footer.js"></script>
+    <script src="../scripts/summer_advent.js"></script>
+    <script src="../scripts/auth.js"></script>
+</body>
+</html>

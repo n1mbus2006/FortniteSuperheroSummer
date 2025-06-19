@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite: Супергеройское лето</title>
+    <link rel="icon" type="favicon" href="../assets/images/logomini.png">
+    <link rel="stylesheet" href="../styles/header&main&footer.css">
+    <link rel="stylesheet" href="../styles/signup&signin.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <section class="logos">
+                <a href="../index.html"><img src="../assets/images/logolarge.png" width="100" alt="Логотип Фортнайт"></a>
+            </section>
+            <section class="nav-first">
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </section>
+            <section class="nav-second">
+                <button data-auth-state="unauthenticated" class="authorize"><a href="signin.html">Вход</a></button>
+                <button data-auth-state="authenticated" class="authorize"><a href="signin.html">Выйти</a></button>
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </section>
+            <section class="mobile-buttons">
+            <div class="nav-second-for-mobile">
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </section>
+            <div class="mobile-menu" id="mobileMenu">
+                <button data-auth-state="unauthenticated" class="authorize"><a href="signin.html">Вход</a></button>
+                <button data-auth-state="authenticated" class="authorize"><a href="signin.html">Выйти</a></button>
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </nav>
+    </header>
+    <main>
+        <h1>Создать учтеную запись</h1>
+        <form action="#" method="post" id="registrationForm">
+            <div class="input-group">
+                <label for="region-select">Регион</label>
+                <select name="region" id="region-select" required>
+                    <option value="">Выберите Регион</option>
+                    <option value="Russian Federation">Russian Federation</option>
+                    <option value="United States">United States</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="China">China</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="firstName">Имя</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="input-group">
+                <label for="secondName">Фамилия</label>
+                <input type="text" id="secondName" name="secondName" required>
+            </div>
+            <div class="input-group">
+                <label for="userName"> Отображаемое имя
+                    <span class="info-icon" id="usernameInfo">?</span>
+                    <div class="tooltip">
+                        <h3><i class="fas fa-info-circle"></i> Требования к никнейму</h3>
+                        <p>Ваше отображаемое имя должно соответствовать следующим правилам:</p>
+                        <ul>
+                            <li>Длина от 3 до 16 символов</li>
+                            <li>Можно использовать буквы (A-Z, a-z), цифры (0-9)</li>
+                            <li>Допустимые специальные символы: . _ -</li>
+                            <li>Не должно содержать оскорбительных слов</li>
+                            <li>Должно быть уникальным (ещё не занято)</li>
+                        </ul>
+                    </div>
+                </label>
+                <div class="input">
+                    <input type="text" id="userName" name="userName" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Адрес электронной почты</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmEmail">Подтвердите адрес электронной почты</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" required>
+            </div>
+            <div class="input-group">
+                <label for="password"> Пароль
+                    <span class="info-icon" id="passwordInfo">?</span>
+                    <div class="tooltip">
+                        <h3><i class="fas fa-info-circle"></i> Требования к паролю</h3>
+                        <p>Пароль должен содержать не менее 5 символов, не менее 1 цифры, не менее 1 буквы (латиница) и не должен содержать пробелы.</p>
+                    </div>
+                </label>
+                <div class="input">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" class="password-toggle" id="passwordToggle">
+                        <img id="passwordIcon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Eye_close_font_awesome.svg" width="15" class="far fa-eye">
+                    </button>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Подтвердите пароль</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" id="agreement" name="agreement" optional>
+                <label for="agreement">Присылать мне на почту новости, опросы и специальные предложения от Epic Games</label>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Я прочитал(-а) и принимаю <a href="https://www.epicgames.com/site/ru/tos?lang=ru">Условия обслуживания</a></label>
+            </div>
+            <button type="submit" class="epic-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+        <div id="authMessage" class="auth-message"></div>
+        <div class="divider">или</div>
+        <div class="social-buttons">
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg" alt="Google">
+                Продолжить с Google
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Nintendo_Switch_logo.svg" alt="Nintendo">
+                Продолжить с Nintendo
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Xbox_logo_2012_cropped.svg" alt="Xbox">
+                Продолжить с Xbox
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg" alt="Playstation">
+                Продолжить с Playstation
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+                Продолжить с Steam
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_icons_logo_vk_color_56.svg" alt="Вконтакте">
+                Продолжить с Вконтакте
+            </button>
+        </div>
+        <div class="register-link">
+            Уже есть учетная запись Epic Games? <a href="signin.html">Войти</a>
+        </div>
+        <div class="policy-link">
+        <a href="http://epicgames.com/site/ru/privacypolicy?lang=ru" target="_blank">Политика конфиденциальности</a>
+        </div>
+    </main>
+    <script src="../scripts/header&footer.js"></script>
+    <script src="../scripts/signup.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/checkAuth.js"></script>
+</body>
+</html>

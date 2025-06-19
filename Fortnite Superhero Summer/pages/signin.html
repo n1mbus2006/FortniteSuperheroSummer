@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite: Супергеройское лето</title>
+    <link rel="icon" type="favicon" href="../assets/images/logomini.png">
+    <link rel="stylesheet" href="../styles/header&main&footer.css">
+    <link rel="stylesheet" href="../styles/signup&signin.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <section class="logos">
+                <a href="../index.html"><img src="../assets/images/logolarge.png" width="100" alt="Логотип Фортнайт"></a>
+            </section>
+            <section class="nav-first">
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </section>
+            <section class="nav-second">
+                <div id="desktopButtons">
+                    <button data-auth-state="unauthenticated" id="auth" class="authorize"><a href="signin.html">Вход</a></button>
+                    <button data-auth-state="authenticated" id="unAuth" class="authorize"><a>Выйти</a></button>
+                </div>
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </section>
+            <section class="mobile-buttons">
+            <div class="nav-second-for-mobile">
+                <button class="download"><a href="https://www.fortnite.com/download?lang=ru" target="_blank">Загрузить</a></button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </section>
+            <div class="mobile-menu" id="mobileMenu">
+                <div id="mobileButtonsContainer"></div>
+                <a href="summer_advent.html" class="calendar">Кале ндарь подарков</a>
+                <a href="rift_tour.html" class="rift-tour">Разлом-тур</a>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Войти в аккаунт Epic Games</h1>
+        <form action="#" method="post" id="loginForm">
+            <div class="input-group-signin">
+                <label for="email">Адрес электронной почты</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group-signin">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" class="password-toggle" id="passwordToggle">
+                    <img id="passwordIcon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Eye_close_font_awesome.svg" width="15" class="far fa-eye">
+                </button>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember" required>
+                <label for="remember">Запомнить меня</label>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Забыли пароль?</a>
+            </div>
+            <button type="submit" class="epic-button">ВОЙТИ</button>
+        </form>
+        <div id="authMessage" class="auth-message"></div>
+        <div class="divider">или</div>
+        <div class="social-buttons">
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg" alt="Google">
+                Войти с Google
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Nintendo_Switch_logo.svg" alt="Nintendo">
+                Войти с Nintendo
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Xbox_logo_2012_cropped.svg" alt="Xbox">
+                Войти с Xbox
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg" alt="Playstation">
+                Войти с Playstation
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+                Войти с Steam
+            </button>
+            <button type="button" class="social-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_icons_logo_vk_color_56.svg" alt="Вконтакте">
+                Войти с Вконтакте
+            </button>
+        </div>
+        <div class="register-link">
+            Нет аккаунта Epic Games? <a href="signup.html">Зарегистрироваться</a>
+        </div>
+        <div class="policy-link">
+        <a href="http://epicgames.com/site/ru/privacypolicy?lang=ru" target="_blank">Политика конфиденциальности</a>
+        </div>
+    </main>
+    <script src="../scripts/header&footer.js"></script>
+    <script src="../scripts/signin.js"></script>
+    <script src="../scripts/checkAuth.js"></script>
+</body>
+</html>
